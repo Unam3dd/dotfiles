@@ -1,0 +1,80 @@
+2024-02-28T22:13:02.246Z 0: 
+
+----------------------------------------------
+2024-02-28T22:13:02.283Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.43"}, modulepath: /home/sam0verfl0w/.config/discord/0.0.43/modules
+2024-02-28T22:13:02.293Z 2: ✅ webContents.created web1 ""
+2024-02-28T22:13:02.308Z 3: ✅ window.created win1 "discord"
+2024-02-28T22:13:02.648Z 4: ✅ webContents.did-finish-load web1
+2024-02-28T22:13:09.873Z 5: ✅ webContents.created web2 ""
+2024-02-28T22:13:09.928Z 6: ✅ window.created win2 "Discord"
+2024-02-28T22:13:14.408Z 7: ✅ webContents.did-finish-load web2
+2024-02-28T22:13:14.506Z 8: window.close win1
+2024-02-28T22:13:14.550Z 9: webContents.destroyed web1
+2024-02-28T22:13:14.572Z 10: window.closed win1
+2024-02-29T03:24:39.388Z 11: window.close win2
+2024-02-29T03:24:43.361Z 12: before-quit
+2024-02-29T03:24:43.378Z 13: window.close win2
+2024-03-04T09:18:29.268Z 0: 
+
+----------------------------------------------
+2024-03-04T09:18:29.292Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.43"}, modulepath: /home/sam0verfl0w/.config/discord/0.0.43/modules
+2024-03-04T09:18:29.330Z 2: ✅ webContents.created web1 ""
+2024-03-04T09:18:29.333Z 3: ✅ window.created win1 "discord"
+2024-03-04T09:18:29.800Z 4: ✅ webContents.did-finish-load web1
+2024-03-04T09:18:30.170Z 5: ✅ webContents.created web2 ""
+2024-03-04T09:18:30.199Z 6: ✅ window.created win2 "Discord"
+2024-03-04T09:18:45.181Z 7: ✅ webContents.did-finish-load web2
+2024-03-04T09:18:45.282Z 8: window.close win1
+2024-03-04T09:18:45.318Z 9: webContents.destroyed web1
+2024-03-04T09:18:45.328Z 10: window.closed win1
+2024-03-04T09:29:19.738Z 11: window.close win2
+2024-03-04T11:02:16.303Z 12: before-quit
+2024-03-04T11:02:16.339Z 13: window.close win2
+2024-03-05T09:12:24.348Z 0: 
+
+----------------------------------------------
+2024-03-05T09:12:24.371Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.43"}, modulepath: /home/sam0verfl0w/.config/discord/0.0.43/modules
+2024-03-05T09:12:24.397Z 2: ✅ webContents.created web1 ""
+2024-03-05T09:12:24.403Z 3: ✅ window.created win1 "discord"
+2024-03-05T09:12:24.852Z 4: ✅ webContents.did-finish-load web1
+2024-03-05T09:12:25.366Z 5: ✅ webContents.created web2 ""
+2024-03-05T09:12:25.401Z 6: ✅ window.created win2 "Discord"
+2024-03-05T09:12:29.537Z 7: ✅ webContents.did-finish-load web2
+2024-03-05T09:12:29.637Z 8: window.close win1
+2024-03-05T09:12:29.680Z 9: webContents.destroyed web1
+2024-03-05T09:12:29.685Z 10: window.closed win1
+2024-03-05T09:33:37.372Z 11: window.close win2
+2024-03-05T15:53:23.235Z 12: before-quit
+2024-04-08T19:19:26.285Z 0: 
+
+----------------------------------------------
+2024-04-08T19:19:26.308Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.43"}, modulepath: /home/sam0verfl0w/.config/discord/0.0.43/modules
+2024-04-08T19:19:26.333Z 2: ✅ webContents.created web1 ""
+2024-04-08T19:19:26.340Z 3: ✅ window.created win1 "discord"
+2024-04-08T19:19:26.775Z 4: ✅ webContents.did-finish-load web1
+2024-04-08T19:20:24.209Z 5: window.close win1
+2024-04-13T13:42:26.095Z 0: 
+
+----------------------------------------------
+2024-04-13T13:42:26.119Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.43"}, modulepath: /home/sam0verfl0w/.config/discord/0.0.43/modules
+2024-04-13T13:42:26.145Z 2: ✅ webContents.created web1 ""
+2024-04-13T13:42:26.150Z 3: ✅ window.created win1 "discord"
+2024-04-13T13:42:26.608Z 4: ✅ webContents.did-finish-load web1
+2024-04-13T13:42:28.329Z 5: window.close win1
+2024-04-13T13:42:28.342Z 6: webContents.destroyed web1
+2024-05-15T19:36:43.238Z 0: 
+
+----------------------------------------------
+2024-05-15T19:36:43.261Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.43"}, modulepath: /home/sam0verfl0w/.config/discord/0.0.43/modules
+2024-05-15T19:36:43.295Z 2: ✅ webContents.created web1 ""
+2024-05-15T19:36:43.303Z 3: ✅ window.created win1 "discord"
+2024-05-15T19:36:43.734Z 4: ✅ webContents.did-finish-load web1
+2024-05-15T19:36:47.153Z 5: window.close win1
+2024-05-20T11:20:59.171Z 0: 
+
+----------------------------------------------
+2024-05-20T11:20:59.191Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.43"}, modulepath: /home/sam0verfl0w/.config/discord/0.0.43/modules
+2024-05-20T11:20:59.214Z 2: ✅ webContents.created web1 ""
+2024-05-20T11:20:59.218Z 3: ✅ window.created win1 "discord"
+2024-05-20T11:20:59.677Z 4: ✅ webContents.did-finish-load web1
+2024-05-20T11:21:01.583Z 5: window.close win1

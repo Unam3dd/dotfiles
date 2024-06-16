@@ -327,6 +327,7 @@ assign [class="(?i)firefox"] $ws2
 assign [class="Thunar"] $ws3
 assign [class="thunderbird"] $ws4
 assign [class="TelegramDesktop"] $ws5
+assign [class="Ghidra"] $ws10
 
 # automatic set focus new window if it opens on another workspace than the current:
 for_window [class=kitty] focus
@@ -334,6 +335,7 @@ for_window [class=(?i)firefox] focus
 for_window [class=Thunar] focus
 for_window [class=Thunderbird] focus
 for_window [class=TelegramDesktop] focus
+for_window [class=Ghidra] focus
 
 ##############
 # compositor #
@@ -399,7 +401,12 @@ exec --no-startup-id ~/.screenlayout/monitor.sh
 # exec --no-startup-id sleep 2 && nitrogen --restore
 #exec --no-startup-id sleep 1 && feh --bg-fill /usr/share/endeavouros/backgrounds/eos_wallpapers_community/Endy_vector_EOS-planet.png
 #exec --no-startup-id sleep 1 && feh --bg-fill /usr/share/endeavouros/backgrounds/girls1.png
-exec --no-startup-id sleep 1 && feh --bg-fill /usr/share/endeavouros/backgrounds/sherlock.jpeg
+#exec --no-startup-id sleep 1 && feh --bg-fill /usr/share/endeavouros/backgrounds/sherlock.jpeg
+#exec --no-startup-id sleep 1 && feh --bg-fill /usr/share/endeavouros/backgrounds/astronaut_wall2.jpg
+#exec --no-startup-id sleep 1 && feh --bg-fill /usr/share/endeavouros/backgrounds/astronaut_wall1.jpg
+#exec --no-startup-id sleep 1 && feh --bg-fill /home/sam0verfl0w/Images/wall.jpg
+#exec --no-startup-id sleep 1 && feh --bg-fill /home/sam0verfl0w/Images/fallout_wallpaper.png
+exec --no-startup-id sleep 1 && feh --bg-fill /home/sam0verfl0w/Images/lofi.png
 
 # set powersavings for display:
 exec --no-startup-id xset s 480 dpms 600 600 600
@@ -488,19 +495,21 @@ set $darkbluetrans	#08052be6
 set $darkblue		#08052b
 set $lightblue		#5294e2
 set $urgentred		#e53935
-set $white		#ffffff
-set $black		#000000
-set $purple		#e345ff
+set $white		    #ffffff
+set $black		    #000000
+set $purple		    #e345ff
 set $darkgrey		#383c4a
-set $grey		#b0b5bd
-set $mediumgrey		#8b8b8b
+set $grey		    #b0b5bd
+#set $mediumgrey		#6a5acd
+set $mediumgrey     #ff8000
 set $yellowbrown	#e1b700
+set $orange         #ff8000
 
 # define colors for windows:
-#class		        	border		bground		text		indicator	child_border
+#class		                border		bground		text		indicator	child_border
 client.focused		    	$lightblue	$darkblue	$white		$mediumgrey	$mediumgrey
-client.unfocused	    	$darkblue	$darkblue	$grey		$darkgrey	$darkgrey
-client.focused_inactive		$darkblue	$darkblue	$grey		$black		$black
+client.unfocused	    	$orange     $darkblue	$grey		$darkgrey	$darkgrey
+client.focused_inactive		$orange     $darkblue	$grey		$black		$black
 client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
 
 ############################################

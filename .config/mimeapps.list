@@ -1,0 +1,12 @@
+[Added Associations]
+image/png=org.gnome.gThumb.desktop;
+image/jpeg=org.gnome.gThumb.desktop;
+application/pdf=chromium.desktop;firefox.desktop;
+text/plain=org.gnome.gedit.desktop;
+text/x-csrc=org.gnome.gedit.desktop;
+image/x-exr=feh.desktop;
+audio/vnd.wave=chromium.desktop;
+
+[Default Applications]
+application/pdf=firefox.desktop
+image/x-exr=feh.desktop

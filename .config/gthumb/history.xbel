@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/sam0verfl0w/repos/DEV/NetSparrow/mascot" added="2024-04-18T13:34:53.454916Z" modified="2024-04-18T13:34:53.454921Z" visited="2024-04-18T13:34:53.454917Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2024-04-18T13:34:53.454919Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="mtp://Xiaomi_ATOLL-AB-IDP__SN%3AAB35C3BD_ff40ada0/Espace%20de%20stockage%20interne%20partag%C3%A9/Snapchat" added="2024-04-18T13:34:53.454928Z" modified="2024-04-18T13:34:53.454931Z" visited="2024-04-18T13:34:53.454929Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2024-04-18T13:34:53.454930Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sam0verfl0w" added="2024-04-18T13:34:53.454933Z" modified="2024-04-18T13:34:53.454936Z" visited="2024-04-18T13:34:53.454933Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2024-04-18T13:34:53.454934Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community" added="2024-04-18T13:34:53.454938Z" modified="2024-04-18T13:34:53.454940Z" visited="2024-04-18T13:34:53.454938Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2024-04-18T13:34:53.454940Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///usr/share/endeavouros/neofetch" added="2024-04-18T13:34:53.454942Z" modified="2024-04-18T13:34:53.454945Z" visited="2024-04-18T13:34:53.454942Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2024-04-18T13:34:53.454944Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sam0verfl0w/T%C3%A9l%C3%A9chargements" added="2024-04-18T13:34:53.454947Z" modified="2024-04-18T13:34:53.454950Z" visited="2024-04-18T13:34:53.454947Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2024-04-18T13:34:53.454949Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///usr/share/endeavouros/backgrounds" added="2024-04-18T13:34:53.454952Z" modified="2024-04-18T13:34:53.454955Z" visited="2024-04-18T13:34:53.454952Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2024-04-18T13:34:53.454954Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sam0verfl0w/output_Tue_Jan_16_15_47_34_2024/jpg" added="2024-04-18T13:34:53.454958Z" modified="2024-04-18T13:34:53.454962Z" visited="2024-04-18T13:34:53.454959Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <bookmark:applications>
+          <bookmark:application name="gThumb" exec="&apos;gthumb %u&apos;" modified="2024-04-18T13:34:53.454961Z" count="1"/>
+        </bookmark:applications>
+        <bookmark:private/>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

@@ -1,0 +1,20 @@
+00:00:00.443847 VirtualBox GUI VM Selector Window 7.0.14 r161095 linux.amd64 (Jan 15 2024 14:16:39) release log
+00:00:00.443849 Log opened 2024-05-18T09:22:31.973767000Z
+00:00:00.443850 Build Type: release
+00:00:00.443854 OS Product: Linux
+00:00:00.443855 OS Release: 6.7.2-arch1-1
+00:00:00.443856 OS Version: #1 SMP PREEMPT_DYNAMIC Fri, 26 Jan 2024 19:10:20 +0000
+00:00:00.443887 DMI Product Name: HP EliteBook 2570p
+00:00:00.443896 DMI Product Version: A1029D1102
+00:00:00.443906 Firmware type: BIOS
+00:00:00.443945 Host RAM: 7809MB (7.6GB) total, 6602MB (6.4GB) available
+00:00:00.443949 Executable: /opt/VirtualBox/VirtualBox
+00:00:00.443949 Process ID: 54518
+00:00:00.443950 Package type: LINUX_64BITS_GENERIC
+00:00:00.443979 Qt version: 5.15.2
+00:00:00.445247 GUI: UIMediumEnumerator: Initial medium-enumeration finished!
+00:00:00.475866 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:01.208340 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 346x9 x 334x724
+00:00:01.232513 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:03:41.025388 GUI: UICommon: Handling aboutToQuit request..
+00:03:41.927209 GUI: UICommon: aboutToQuit request handled!

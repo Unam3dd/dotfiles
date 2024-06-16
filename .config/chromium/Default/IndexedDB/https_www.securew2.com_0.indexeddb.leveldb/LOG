@@ -1,0 +1,18 @@
+2024/05/27-10:55:46.066 518d Creating DB /home/sam0verfl0w/.config/chromium/Default/IndexedDB/https_www.securew2.com_0.indexeddb.leveldb since it was missing.
+2024/05/27-10:55:46.073 518d Reusing MANIFEST /home/sam0verfl0w/.config/chromium/Default/IndexedDB/https_www.securew2.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/05/27-10:55:48.673 518d Level-0 table #5: started
+2024/05/27-10:55:48.676 518d Level-0 table #5: 594 bytes OK
+2024/05/27-10:55:48.681 518d Delete type=0 #3
+2024/05/27-10:55:48.688 519a Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/05/27-10:55:50.676 518e Level-0 table #7: started
+2024/05/27-10:55:50.677 518e Level-0 table #7: 237 bytes OK
+2024/05/27-10:55:50.679 518e Delete type=0 #4
+2024/05/27-10:55:50.679 518e Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2024/05/27-10:55:50.680 518e Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x00\x00\x002\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00' @ 21 : 0
+2024/05/27-10:55:50.680 518e Compacting 1@1 + 1@2 files
+2024/05/27-10:55:50.681 518e Generated table #8@1: 5 keys, 237 bytes
+2024/05/27-10:55:50.681 518e Compacted 1@1 + 1@2 files => 237 bytes
+2024/05/27-10:55:50.683 518e compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/05/27-10:55:50.683 518e Delete type=2 #5
+2024/05/27-10:55:50.683 518e Delete type=2 #7
+2024/05/27-10:55:50.683 518e Manual compaction at level-1 from '\x00\x00\x00\x002\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00' @ 21 : 0 .. (end); will stop at (end)

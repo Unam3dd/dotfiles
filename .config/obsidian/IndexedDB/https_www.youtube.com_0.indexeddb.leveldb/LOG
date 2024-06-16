@@ -1,0 +1,6 @@
+2024/05/10-14:24:10.965 335c Creating DB /home/sam0verfl0w/.config/obsidian/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb since it was missing.
+2024/05/10-14:24:10.970 335c Reusing MANIFEST /home/sam0verfl0w/.config/obsidian/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/05/10-14:24:13.254 335d Level-0 table #5: started
+2024/05/10-14:24:13.256 335d Level-0 table #5: 385 bytes OK
+2024/05/10-14:24:13.258 335d Delete type=0 #3
+2024/05/10-14:24:13.258 335d Manual compaction at level-0 from (begin) .. (end); will stop at (end)
