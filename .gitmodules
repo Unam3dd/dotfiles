@@ -1,0 +1,3 @@
+[submodule "AtmoVim"]
+	path = AtmoVim
+	url = git@github.com:Unam3dd/AtmoVim.git
