@@ -1,0 +1,150 @@
+/*******************************************************
+ * ROFI Configuration Simple et Moderne
+ * Utilise les mêmes couleurs que la configuration i3
+ *******************************************************/
+
+configuration {
+    font: "FiraCode Nerd Font Mono Regular 12";
+    show-icons: true;
+    icon-theme: "Papirus-Dark";
+    display-drun: "󰀻 Apps";
+    drun-display-format: "{name}";
+    disable-history: false;
+    sidebar-mode: false;
+    click-to-exit: true;
+}
+
+* {
+    /* Couleurs exactes de la configuration i3 */
+    bg-primary:     #1a1a1a;     /* Fond principal très sombre */
+    bg-secondary:   #2d2d2d;     /* Surfaces secondaires */
+    bg-tertiary:    #404040;     /* Bordures et éléments tertiaires */
+    bg-accent:      #16a085;     /* Accent vert Manjaro */
+    
+    text-primary:   #c0c0c0;     /* Texte principal argenté */
+    text-secondary: #a0a0a0;     /* Texte secondaire */
+    text-muted:     #808080;     /* Texte atténué */
+    text-accent:    #1abc9c;     /* Texte accent vert clair */
+    
+    status-urgent:  #e74c3c;     /* Rouge pour les alertes */
+    status-warning: #f39c12;     /* Orange pour les avertissements */
+    status-success: #27ae60;     /* Vert pour le succès */
+    status-info:    #3498db;     /* Bleu pour les informations */
+    
+    border-focused: #16a085;     /* Bordure fenêtre active */
+    border-unfocused: #404040;   /* Bordure fenêtre inactive */
+    
+    background-color: transparent;
+    text-color: @text-primary;
+    margin: 0;
+    padding: 0;
+    spacing: 0;
+}
+
+window {
+    transparency: "real";
+    location: center;
+    width: 800px;
+    background-color: @bg-primary;
+    border: 2px solid;
+    border-color: @border-focused;
+    border-radius: 12px;
+}
+
+mainbox {
+    children: [ inputbar, listview ];
+    spacing: 20px;
+    padding: 20px;
+}
+
+inputbar {
+    background-color: @bg-secondary;
+    border-radius: 8px;
+    padding: 12px;
+    children: [ prompt, entry ];
+    spacing: 10px;
+}
+
+prompt {
+    text-color: @text-accent;
+    font: "FiraCode Nerd Font Mono Bold 12";
+}
+
+entry {
+    text-color: @text-primary;
+    placeholder: "Rechercher...";
+    placeholder-color: @text-muted;
+}
+
+listview {
+    columns: 3;
+    lines: 6;
+    spacing: 8px;
+    cycle: true;
+    scrollbar: false;
+}
+
+element {
+    border-radius: 6px;
+    padding: 10px;
+    spacing: 8px;
+    orientation: vertical;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color: @text-secondary;
+}
+
+element normal.urgent {
+    background-color: @status-urgent;
+    text-color: @text-primary;
+    border-radius: 6px;
+}
+
+element normal.active {
+    background-color: @status-success;
+    text-color: @text-primary;
+    border-radius: 6px;
+}
+
+element selected.normal {
+    background-color: @bg-accent;
+    text-color: @text-primary;
+}
+
+element selected.urgent {
+    background-color: @status-urgent;
+    text-color: @text-primary;
+}
+
+element selected.active {
+    background-color: @status-success;
+    text-color: @text-primary;
+}
+
+element alternate.normal {
+    background-color: @bg-tertiary;
+    text-color: @text-secondary;
+    border-radius: 6px;
+}
+
+element-icon {
+    size: 28px;
+}
+
+element-text {
+    horizontal-align: 0.5;
+    font: "FiraCode Nerd Font Mono Regular 10";
+}
+
+scrollbar {
+    width: 4px;
+    border: 0px;
+    handle-color: @bg-accent;
+    handle-width: 8px;
+    padding: 0px;
+    margin: 0px 4px 0px 0px;
+    background-color: @bg-tertiary;
+    border-radius: 4px;
+} 

@@ -37,10 +37,11 @@ new_window pixel 1
 # hide_edge_borders both
 
 # Set inner/outer gaps
-gaps inner 6
-gaps outer 3
+gaps inner 12
+gaps outer 6
 
-for_window [class=".*"] border pixel 2 #*
+# Bordures fines et élégantes
+for_window [class=".*"] border pixel 1
 hide_edge_borders both
 
 # show window title bars (not officially supported with i3gaps)
@@ -392,7 +393,7 @@ exec --no-startup-id xset s 480 dpms 600 600 600
 #exec --no-startup-id /usr/bin/dunst --config ~/.config/dunst/dunstrc
 # may need to run dbus-launch explicitly: 
 #exec --no-startup-id dbus-launch /usr/bin/dunst
-exec --no-startup-id /usr/bin/dunst
+exec --no-startup-id /usr/bin/dunst --config ~/.config/dunst/dunstrc
 #exec --no-startup-id ibus exit
 
 # Autostart apps as you like
@@ -413,8 +414,13 @@ exec --no-startup-id /usr/bin/dunst
 # networkmanager-applet
 exec --no-startup-id nm-applet
 
+exec --no-startup-id xrandr --output eDP-1 --brightness 0.7
+
 # clipman-applet
 #exec --no-startup-id xfce4-clipman
+
+bindsym $mod+F3 exec sudo brightnessctl s 5%-
+bindsym $mod+F4 exec sudo brightnessctl s +5%
 
 ##################
 # floating rules #
@@ -448,29 +454,44 @@ exec --no-startup-id nm-applet
 # color settings for bar and windows #
 ######################################
 
-# Define colors variables:
-set $darkbluetrans	#08052be6
-set $darkblue		#08052b
-set $lightblue		#5294e2
-set $urgentred		#e53935
-set $white		    #ffffff
-set $black		    #000000
-set $purple		    #e345ff
-set $darkgrey		#383c4a
-set $grey		    #b0b5bd
-#set $mediumgrey	#6a5acd
-#set $mediumgrey     #f81fe3
-#set $mediumgrey     #ff8000
-set $mediumgrey     #f0c674
-set $yellowbrown	#e1b700
-set $orange         #ff8000
+# Modern 2025 Theme Colors
+# Fond principal très sombre
+set $bg-primary      #1a1a1a
+# Surfaces secondaires
+set $bg-secondary    #2d2d2d
+# Bordures et éléments tertiaires
+set $bg-tertiary     #404040
+# Accent vert Manjaro
+set $bg-accent       #16a085
+# Texte principal argenté
+set $text-primary    #c0c0c0
+# Texte secondaire
+set $text-secondary  #a0a0a0
+# Texte atténué
+set $text-muted      #808080
+# Texte accent vert clair
+set $text-accent     #1abc9c
+# Rouge pour les alertes
+set $status-urgent   #e74c3c
+# Orange pour les avertissements
+set $status-warning  #f39c12
+# Vert pour le succès
+set $status-success  #27ae60
+# Bleu pour les informations
+set $status-info     #3498db
+# Bordure fenêtre active (élégante)
+set $border-focused  #16a085
+# Bordure fenêtre inactive (discrète)
+set $border-unfocused #404040
+# Bordure fenêtre urgente (attentive)
+set $border-urgent   #aa573c
 
 # define colors for windows:
 #class		                border		bground		text		indicator	child_border
-client.focused		    	$lightblue	$darkblue	$white		$mediumgrey	$mediumgrey
-client.unfocused	    	$orange     $darkblue	$grey		$darkgrey	$darkgrey
-client.focused_inactive		$orange     $darkblue	$grey		$black		$black
-client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
+client.focused		    	$border-focused	$bg-primary	$text-primary	$bg-accent	$bg-accent
+client.unfocused	    	$border-unfocused	$bg-primary	$text-secondary	$bg-tertiary	$bg-tertiary
+client.focused_inactive		$border-unfocused	$bg-primary	$text-secondary	$bg-tertiary	$bg-tertiary
+client.urgent		    	$border-urgent	$bg-primary	$text-primary	$status-warning	$status-warning
 
 ############################################
 # bar settings (input comes from i3blocks) #

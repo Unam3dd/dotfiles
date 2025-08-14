@@ -1,135 +1,267 @@
 /*******************************************************
- * ROFI configs i3 Apps menu for EndeavourOS
- * Maintainer: joekamprad [joekamprad //a_t// endeavouros.com]
+ * ROFI Configuration Moderne et Élégante - Unix Porn Style
+ * Configuration corrigée et compatible avec Rofi
  *******************************************************/
+
 configuration {
-    font:                "Noto Sans Regular 10";
+    font:                "FiraCode Nerd Font Mono Regular 12";
     show-icons:          true;
-    icon-theme:          "Qogir";
-    display-drun:        "Apps";
+    icon-theme:          "Papirus-Dark";
+    display-drun:        "󰀻 Applications";
     drun-display-format: "{name}";
     scroll-method:       0;
     disable-history:     false;
     sidebar-mode:        false;
+    click-to-exit:       true;
+    combi-hide-mode-prefix: true;
+    display-combi:       "󰘳 Tout";
+    display-run:         "󰅴 Commandes";
+    display-window:      "󰖯 Fenêtres";
 }
 
-@import "~/.config/rofi/arc_dark_transparent_colors.rasi"
+/* Palette de couleurs i3 - Cohérence parfaite */
+* {
+    /* Couleurs exactes de la configuration i3 */
+    bg0:     #1a1a1a;     /* Fond principal très sombre */
+    bg1:     #2d2d2d;     /* Surfaces secondaires */
+    bg2:     #404040;     /* Bordures et éléments tertiaires */
+    bg3:     #404040;     /* Identique à bg2 pour cohérence */
+    
+    fg0:     #c0c0c0;     /* Texte principal argenté */
+    fg1:     #a0a0a0;     /* Texte secondaire */
+    fg2:     #808080;     /* Texte atténué */
+    
+    /* Couleurs d'accent i3 */
+    accent:  #16a085;     /* Accent vert Manjaro */
+    urgent:  #e74c3c;     /* Rouge pour les alertes */
+    active:  #27ae60;     /* Vert pour le succès */
+    
+    /* Couleurs spéciales */
+    transparent: #00000000;
+    semi-transparent: #1a1a1a90;
+    
+    /* Variables globales */
+    background-color: @transparent;
+    text-color: @fg0;
+    margin: 0;
+    padding: 0;
+    spacing: 0;
+}
 
 window {
-    background-color: @background;
-    border:           0;
-    padding:          30;
+    transparency:        "real";
+    location:            center;
+    anchor:              center;
+    fullscreen:          false;
+    width:               900px;
+    x-offset:            0px;
+    y-offset:            0px;
+    
+    background-color:    @semi-transparent;
+    border:              2px solid;
+    border-color:        @accent;
+    border-radius:       16px;
+    cursor:              "default";
+    
+    children:            [ mainbox ];
 }
-listview {
-    lines:   10;
-    columns: 3;
-}
+
 mainbox {
-    border:  0;
-    padding: 0;
+    background-color:    @transparent;
+    children:            [ inputbar, listview, mode-switcher ];
+    spacing:             15px;
+    padding:             30px;
 }
-message {
-    border:       2px 0px 0px;
-    border-color: @separatorcolor;
-    padding:      1px;
-}
-textbox {
-    text-color: @foreground;
-}
-listview {
-    fixed-height: 0;
-    border:       8px 0px 0px;
-    border-color: @separatorcolor;
-    spacing:      8px;
-    scrollbar:    false;
-    padding:      2px 0px 0px;
-}
-element {
-    border:  0;
-    padding: 1px;
-}
-element-text {
-    background-color: inherit;
-    text-color:       inherit;
-}
-element.normal.normal {
-    background-color: @normal-background;
-    text-color:       @normal-foreground;
-}
-element.normal.urgent {
-    background-color: @urgent-background;
-    text-color:       @urgent-foreground;
-}
-element.normal.active {
-    background-color: @active-background;
-    text-color:       @active-foreground;
-}
-element.selected.normal {
-    background-color: @selected-normal-background;
-    text-color:       @selected-normal-foreground;
-}
-element.selected.urgent {
-    background-color: @selected-urgent-background;
-    text-color:       @selected-urgent-foreground;
-}
-element.selected.active {
-    background-color: @selected-active-background;
-    text-color:       @selected-active-foreground;
-}
-element.alternate.normal {
-    background-color: @alternate-normal-background;
-    text-color:       @alternate-normal-foreground;
-}
-element.alternate.urgent {
-    background-color: @alternate-urgent-background;
-    text-color:       @alternate-urgent-foreground;
-}
-element.alternate.active {
-    background-color: @alternate-active-background;
-    text-color:       @alternate-active-foreground;
-}
-scrollbar {
-    width:        4px;
-    border:       0;
-    handle-color: @normal-foreground;
-    handle-width: 8px;
-    padding:      0;
-}
-mode-switcher {
-    border:       2px 0px 0px;
-    border-color: @separatorcolor;
-}
-button {
-    spacing:    0;
-    text-color: @normal-foreground;
-}
-button.selected {
-    background-color: @selected-normal-background;
-    text-color:       @selected-normal-foreground;
-}
+
 inputbar {
-    spacing:    0;
-    text-color: @normal-foreground;
-    padding:    1px;
+    background-color:    @bg1;
+    text-color:          @fg0;
+    border:              1px solid;
+    border-color:        @bg3;
+    border-radius:       12px;
+    padding:             12px 16px;
+    spacing:             12px;
+    children:            [ prompt, textbox-prompt-colon, entry, case-indicator ];
 }
-case-indicator {
-    spacing:    0;
-    text-color: @normal-foreground;
-}
-entry {
-    spacing:    0;
-    text-color: @normal-foreground;
-}
+
 prompt {
-    spacing:    0;
-    text-color: @normal-foreground;
+    background-color:    @transparent;
+    text-color:          @accent;
+    font:                "JetBrains Mono Nerd Font Bold 11";
 }
-inputbar {
-    children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
-}
+
 textbox-prompt-colon {
-    expand:     false;
-    str:        ":";
-    margin:     0px 0.3em 0em 0em;
-    text-color: @normal-foreground;
+    expand:              false;
+    str:                 "›";
+    background-color:    @transparent;
+    text-color:          @fg2;
+    margin:              0px 8px 0px 0px;
+}
+
+entry {
+    placeholder:         "Tapez pour rechercher...";
+    background-color:    @transparent;
+    text-color:          @fg0;
+    cursor:              text;
+    placeholder-color:   @fg2;
+}
+
+case-indicator {
+    background-color:    @transparent;
+    text-color:          @fg2;
+}
+
+listview {
+    background-color:    @transparent;
+    columns:             3;
+    lines:               8;
+    cycle:               true;
+    dynamic:             true;
+    scrollbar:           false;
+    layout:              vertical;
+    reverse:             false;
+    fixed-height:        true;
+    fixed-columns:       true;
+    spacing:             8px;
+    padding:             8px 0px;
+}
+
+element {
+    background-color:    @transparent;
+    text-color:          @fg1;
+    border:              0px;
+    border-radius:       8px;
+    padding:             12px;
+    cursor:              pointer;
+    spacing:             8px;
+    orientation:         vertical;
+}
+
+element normal.normal {
+    background-color:    @transparent;
+    text-color:          @fg1;
+}
+
+element normal.urgent {
+    background-color:    @urgent;
+    text-color:          @bg0;
+    border-radius:       8px;
+}
+
+element normal.active {
+    background-color:    @active;
+    text-color:          @bg0;
+    border-radius:       8px;
+}
+
+element selected.normal {
+    background-color:    @accent;
+    text-color:          @bg0;
+    border:              0px;
+    border-radius:       8px;
+}
+
+element selected.urgent {
+    background-color:    @urgent;
+    text-color:          @bg0;
+    border-radius:       8px;
+}
+
+element selected.active {
+    background-color:    @active;
+    text-color:          @bg0;
+    border-radius:       8px;
+}
+
+element alternate.normal {
+    background-color:    @transparent;
+    text-color:          @fg1;
+}
+
+element alternate.urgent {
+    background-color:    @bg1;
+    text-color:          @urgent;
+    border-radius:       8px;
+}
+
+element alternate.active {
+    background-color:    @bg1;
+    text-color:          @active;
+    border-radius:       8px;
+}
+
+element-icon {
+    background-color:    @transparent;
+    size:                32px;
+    cursor:              inherit;
+}
+
+element-text {
+    background-color:    @transparent;
+    text-color:          inherit;
+    cursor:              inherit;
+    vertical-align:      0.5;
+    horizontal-align:    0.5;
+    font:                "JetBrains Mono Nerd Font 10";
+}
+
+scrollbar {
+    width:               4px;
+    border:              0px;
+    handle-color:        @accent;
+    handle-width:        8px;
+    padding:             0px;
+    margin:              0px 4px 0px 0px;
+    background-color:    @bg2;
+    border-radius:       4px;
+}
+
+mode-switcher {
+    background-color:    @bg1;
+    border:              1px solid;
+    border-color:        @bg3;
+    border-radius:       12px;
+    padding:             8px;
+    spacing:             4px;
+}
+
+button {
+    background-color:    @transparent;
+    text-color:          @fg1;
+    border:              0px;
+    border-radius:       6px;
+    padding:             8px 16px;
+    cursor:              pointer;
+    font:                "JetBrains Mono Nerd Font 10";
+}
+
+button selected {
+    background-color:    @accent;
+    text-color:          @bg0;
+    border-radius:       6px;
+}
+
+message {
+    background-color:    @bg1;
+    border:              1px solid;
+    border-color:        @bg3;
+    border-radius:       12px;
+    padding:             12px;
+    margin:              0px 0px 15px 0px;
+}
+
+textbox {
+    background-color:    @transparent;
+    text-color:          @fg0;
+    vertical-align:      0.5;
+    horizontal-align:    0.0;
+    highlight:           @accent;
+    blink:               true;
+}
+
+error-message {
+    background-color:    @urgent;
+    text-color:          @bg0;
+    border-radius:       12px;
+    padding:             12px;
 }

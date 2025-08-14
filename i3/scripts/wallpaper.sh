@@ -1,7 +1,9 @@
 #!/bin/bash
-# Author: Unam3dd
+# Modern 2025 Wallpaper Script
+# Sets a random wallpaper from the 2K25 collection
 
-WALLPAPER_DIR=/usr/share/backgrounds/cyberpunk-wallpaper/
+WALLPAPER_DIR="/usr/share/backgrounds/2K25"
+
 
 if [ ! -d $WALLPAPER_DIR ]; then
     echo -e "[\033[31m-\033[00m] $WALLPAPER_DIR not found !"
@@ -13,10 +15,11 @@ if [ ! $(which feh) ]; then
     exit 1
 fi
 
-FILES=$(find $WALLPAPER_DIR -type f -name "wallpaper*.jpg" | shuf)
+FILES=$(find $WALLPAPER_DIR -type f -name "*.jpg" | shuf)
 
 while [ 1 ]; do
     for f in $FILES; do
+		echo $f
         feh --bg-fill $f
         sleep 300
     done
