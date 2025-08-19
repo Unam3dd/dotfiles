@@ -41,7 +41,7 @@ gaps inner 12
 gaps outer 6
 
 # Bordures fines et élégantes
-for_window [class=".*"] border pixel 1
+for_window [class=".*"] border pixel 2
 hide_edge_borders both
 
 # show window title bars (not officially supported with i3gaps)
